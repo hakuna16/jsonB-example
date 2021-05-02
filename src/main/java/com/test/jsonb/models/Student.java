@@ -1,6 +1,5 @@
 package com.test.jsonb.models;
 
-import java.util.List;
 import java.util.Map;
 
 import javax.persistence.Column;
@@ -30,5 +29,5 @@ public class Student {
     
     @Type(type = "jsonb")
     @Column(name = "bio", columnDefinition = "jsonb")
-    private List<Map<String, Map<String, ?>>> attributes;
+    private Map<String, Map<String, Object>> attributes;
 }
